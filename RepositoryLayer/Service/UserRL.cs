@@ -49,6 +49,11 @@ namespace RepositoryLayer.Service
             var result = _projectContext.Users.ToList();
             return result;
         }
+        public UserEntity Getuser(string name)
+        {
+            UserEntity userEntity = _projectContext.Users.FirstOrDefault(x => x.Name == name);
+            return userEntity;
+        }
 
     }
 }

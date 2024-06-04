@@ -74,6 +74,20 @@ namespace Projectname.Controllers
             }
         }
 
-        
+        [HttpGet]
+        [Route("{name}")]
+        public IActionResult GetUser(string name)
+        {
+            var result = userBL.Getuser(name);
+            if (result != null)
+            {
+                return Ok(result);
+            }
+            else
+            {
+                return NotFound("User Not Found!!!");
+            }
+        }
+
     }
 }

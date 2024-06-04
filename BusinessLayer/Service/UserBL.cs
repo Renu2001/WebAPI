@@ -36,5 +36,11 @@ namespace BusinessLayer.Service
         {
             return _userRL.Getusers();
         }
+
+        public UserEntity Getuser(string name)
+        {
+            return _userRL.Getuser(name);
+        }
+
     }
 }
