@@ -44,6 +44,11 @@ namespace RepositoryLayer.Service
             return userEntity;
         }
 
+        public List<UserEntity> Getusers()
+        {
+            var result = _projectContext.Users.ToList();
+            return result;
+        }
 
     }
 }

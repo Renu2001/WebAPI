@@ -14,6 +14,7 @@ namespace RepositoryLayer.Interface
 
         public UserEntity Updateuser(int id, UserModel user);
         public UserEntity DeleteUser(int id);
+        public List<UserEntity> Getusers();
 
     }
 }

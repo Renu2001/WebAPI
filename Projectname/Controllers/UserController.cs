@@ -59,6 +59,21 @@ namespace Projectname.Controllers
                 return BadRequest("Something went Wrong !!!");
             }
         }
+        [HttpGet]
 
+        public IActionResult GetUsers()
+        {
+            var result = userBL.Getusers();
+            if (result != null)
+            {
+                return Ok(result);
+            }
+            else
+            {
+                return NotFound("User Not Found!!!");
+            }
+        }
+
+        
     }
 }
