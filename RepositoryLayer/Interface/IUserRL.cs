@@ -13,5 +13,7 @@ namespace RepositoryLayer.Interface
         public UserEntity Adduser(UserModel user);
 
         public UserEntity Updateuser(int id, UserModel user);
+        public UserEntity DeleteUser(int id);
+
     }
 }

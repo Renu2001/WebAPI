@@ -36,6 +36,13 @@ namespace RepositoryLayer.Service
             _projectContext.SaveChanges();
             return userEntity;
         }
+        public UserEntity DeleteUser(int id)
+        {
+            UserEntity userEntity = _projectContext.Users.Find(id);
+            _projectContext.Users.Remove(userEntity);
+            _projectContext.SaveChanges();
+            return userEntity;
+        }
 
 
     }

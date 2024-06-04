@@ -46,6 +46,19 @@ namespace Projectname.Controllers
                 return BadRequest("Not Updated Successfully ");
             }
         }
+        [HttpDelete]
+        public IActionResult Deleteuser(int id)
+        {
+            var result = userBL.DeleteUser(id);
+            if (result != null)
+            {
+                return Ok(result);
+            }
+            else
+            {
+                return BadRequest("Something went Wrong !!!");
+            }
+        }
 
     }
 }

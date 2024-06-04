@@ -28,6 +28,10 @@ namespace BusinessLayer.Service
         {
             return _userRL.Updateuser(id, model);
         }
+        public UserEntity DeleteUser(int id)
+        {
+            return _userRL.DeleteUser(id);
+        }
 
     }
 }
