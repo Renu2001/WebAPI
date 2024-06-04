@@ -31,5 +31,21 @@ namespace Projectname.Controllers
                 return BadRequest("Something Went Wrong!!!");
             }
         }
+
+
+        [HttpPut]
+        public IActionResult Updateuser(int id, UserModel model)
+        {
+            var result = userBL.Updateuser(id, model);
+            if (result != null)
+            {
+                return Ok(result);
+            }
+            else
+            {
+                return BadRequest("Not Updated Successfully ");
+            }
+        }
+
     }
 }

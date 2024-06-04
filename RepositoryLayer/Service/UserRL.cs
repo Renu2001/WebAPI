@@ -28,6 +28,15 @@ namespace RepositoryLayer.Service
             return userEntity;
         }
 
+        public UserEntity Updateuser(int id, UserModel user)
+        {
+            var userEntity = _projectContext.Users.Find(id);
+            userEntity.Name = user.Name;
+            _projectContext.Users.Update(userEntity);
+            _projectContext.SaveChanges();
+            return userEntity;
+        }
+
 
     }
 }

@@ -24,6 +24,10 @@ namespace BusinessLayer.Service
             return _userRL.Adduser(model);
         }
 
+        public UserEntity Updateuser(int id, UserModel model)
+        {
+            return _userRL.Updateuser(id, model);
+        }
 
     }
 }
