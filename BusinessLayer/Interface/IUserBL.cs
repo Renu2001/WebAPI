@@ -10,6 +10,7 @@ namespace BusinessLayer.Interface
 {
     public interface IUserBL
     {
-        
+        public UserEntity Adduser(UserModel user);
+
     }
 }

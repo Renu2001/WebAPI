@@ -10,6 +10,8 @@ namespace RepositoryLayer.Interface
 {
     public interface IUserRL
     {
-        
+        public UserEntity Adduser(UserModel user);
+
+
     }
 }

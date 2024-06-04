@@ -17,7 +17,19 @@ namespace Projectname.Controllers
             this.userBL = userBL;
         }
 
-        
-        
+        [HttpPost]
+        public IActionResult Adduser(UserModel model)
+        {
+            var result = userBL.Adduser(model);
+
+            if (result != null)
+            {
+                return Ok(result);
+            }
+            else
+            {
+                return BadRequest("Something Went Wrong!!!");
+            }
+        }
     }
 }

@@ -19,6 +19,11 @@ namespace BusinessLayer.Service
             this._userRL = userRL;
         }
 
-       
+        public UserEntity Adduser(UserModel model)
+        {
+            return _userRL.Adduser(model);
+        }
+
+
     }
 }

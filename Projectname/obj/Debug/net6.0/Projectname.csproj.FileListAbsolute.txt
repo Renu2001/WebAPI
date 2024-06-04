@@ -141,3 +141,4 @@ D:\BRIDGELABZ\WebAPI\Projectname\obj\Debug\net6.0\refint\Projectname.dll
 D:\BRIDGELABZ\WebAPI\Projectname\obj\Debug\net6.0\Projectname.pdb
 D:\BRIDGELABZ\WebAPI\Projectname\obj\Debug\net6.0\Projectname.genruntimeconfig.cache
 D:\BRIDGELABZ\WebAPI\Projectname\obj\Debug\net6.0\ref\Projectname.dll
+D:\BRIDGELABZ\WebAPI\Projectname\obj\Debug\net6.0\Projectname.sourcelink.json

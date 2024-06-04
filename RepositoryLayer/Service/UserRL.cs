@@ -18,7 +18,16 @@ namespace RepositoryLayer.Service
         {
             this._projectContext = projectContext;
         }
-       
-         
+
+        public UserEntity Adduser(UserModel user)
+        {
+            UserEntity userEntity = new UserEntity();
+            userEntity.Name = user.Name;
+            _projectContext.Users.Add(userEntity);
+            _projectContext.SaveChanges();
+            return userEntity;
+        }
+
+
     }
 }
