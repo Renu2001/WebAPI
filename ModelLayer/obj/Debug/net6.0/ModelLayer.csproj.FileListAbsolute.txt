@@ -21,3 +21,4 @@ D:\BRIDGELABZ\WebAPI\ModelLayer\obj\Debug\net6.0\ModelLayer.dll
 D:\BRIDGELABZ\WebAPI\ModelLayer\obj\Debug\net6.0\refint\ModelLayer.dll
 D:\BRIDGELABZ\WebAPI\ModelLayer\obj\Debug\net6.0\ModelLayer.pdb
 D:\BRIDGELABZ\WebAPI\ModelLayer\obj\Debug\net6.0\ref\ModelLayer.dll
+D:\BRIDGELABZ\WebAPI\ModelLayer\obj\Debug\net6.0\ModelLayer.sourcelink.json
